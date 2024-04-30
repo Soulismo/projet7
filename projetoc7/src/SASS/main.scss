@@ -1,2 +1,9 @@
 @use "layout/header";
 @use "layout/footer";
+@use "composant/bannerImg.scss";
+@use "composant/error.scss";
+@use "composant/gallery.scss";
+@use "pages/about.scss";
+@use "pages/error404.scss";
+@use "pages/home.scss";
+@use "pages/location.scss";

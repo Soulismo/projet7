@@ -1,10 +1,9 @@
+import BannerImg from "../composant/BannerImg";
+
 const Home = () => {
-  return (
-    <div className="home">
-      <BannerImg />
-      <Gallery />
-    </div>
-  );
+  <div className="home">
+    <BannerImg />
+  </div>;
 };
 
 export default Home;

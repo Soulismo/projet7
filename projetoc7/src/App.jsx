@@ -1,4 +1,9 @@
+import About from "./pages/About";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+import Location from "./pages/Location";
 import Header from "./composant/Header";
+
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
   const basename = import.meta.env.MODE === "production" ? "/kasa" : "";
@@ -12,7 +17,6 @@ function App() {
         <Route path="/Apropos" element={<About />} />
         <Route path="*" element={<Error />} />
       </Routes>
-      <Footer />
     </BrowserRouter>
   );
 }

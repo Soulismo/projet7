@@ -1,0 +1,33 @@
+.banner {
+  margin: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 1.5625rem;
+  background: #f6f6f6;
+  height: 223px;
+  max-width: 1240px;
+  margin-bottom: 30px;
+}
+h1 {
+  color: white;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Montserrat;
+  font-size: 3rem;
+}
+.mask {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 1.5625rem;
+  opacity: 0.3;
+  background: #000;
+  mix-blend-mode: darken;
+}
