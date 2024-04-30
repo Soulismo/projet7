@@ -3,20 +3,22 @@ import Home from "./pages/Home";
 import Error from "./pages/Error";
 import Location from "./pages/Location";
 import Header from "./composant/Header";
-
+import Footer from "./composant/footer";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 function App() {
-  const basename = import.meta.env.MODE === "production" ? "/kasa" : "";
   return (
-    <BrowserRouter basename={basename}>
+    <BrowserRouter>
       <Header />
-      <Routes>
-        <Route path="/" element={<Navigate to="/Accueil" replace />} />
-        <Route path="/Accueil" element={<Home />} />
-        <Route path="/location/:id" element={<Location />} />
-        <Route path="/Apropos" element={<About />} />
-        <Route path="*" element={<Error />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/location/:id" element={<Location />} />
+          <Route path="/a-propos" element={<About />} />
+          <Route path="/404" element={<Error />} />
+          <Route pathe="/*" element={<Navigate replace to="/404" />} />
+        </Routes>
+      </main>
+      <Footer />
     </BrowserRouter>
   );
 }

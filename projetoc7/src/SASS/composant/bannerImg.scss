@@ -10,6 +10,7 @@
   height: 223px;
   max-width: 1240px;
   margin-bottom: 30px;
+  overflow: hidden;
 }
 h1 {
   color: white;
@@ -30,4 +31,10 @@ h1 {
   opacity: 0.3;
   background: #000;
   mix-blend-mode: darken;
+}
+.bannerImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
