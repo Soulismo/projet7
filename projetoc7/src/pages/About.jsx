@@ -1,10 +1,11 @@
 import React from "react";
-import BannerImg from "../composant/BannerImg";
+import BannerImg from "../composant/BannerApropos";
+import BannerApropos from "../composant/BannerApropos";
 
 function About() {
   return (
     <div className="about">
-      <BannerImg />
+      <BannerApropos />
     </div>
   );
 }

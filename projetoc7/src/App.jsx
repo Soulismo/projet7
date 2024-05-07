@@ -4,7 +4,7 @@ import Error from "./pages/Error";
 import Location from "./pages/Location";
 import Header from "./composant/Header";
 import Footer from "./composant/footer";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
@@ -15,7 +15,7 @@ function App() {
           <Route path="/location/:id" element={<Location />} />
           <Route path="/a-propos" element={<About />} />
           <Route path="/404" element={<Error />} />
-          <Route pathe="/*" element={<Navigate replace to="/404" />} />
+          <Route path="*" element={<Error />} />
         </Routes>
       </main>
       <Footer />
