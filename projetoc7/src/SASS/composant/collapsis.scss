@@ -21,6 +21,7 @@
     @media screen and (max-width: 768px) {
       height: 30px;
     }
+
     h3 {
       color: white;
       font-family: Montserrat;
@@ -37,16 +38,22 @@
       transition: transform 0.4s ease;
       height: 24px;
       width: 24px;
+      transform: rotate(90deg);
       @media screen and (max-width: 768px) {
         height: 18px;
         width: 18px;
       }
       &.down {
-        transform: rotate(-180deg);
+        transform: rotate(-90deg);
       }
     }
   }
   .paragraph {
+    ul {
+      li {
+        list-style: none;
+      }
+    }
     background-color: #f6f6f6;
     margin: 0;
     margin-bottom: 5px;

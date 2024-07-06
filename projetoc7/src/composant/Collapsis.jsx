@@ -2,7 +2,8 @@ import { useState } from "react";
 import svgFleche from "../assets/images/arrowLeft.svg";
 import PropTypes from "prop-types";
 
-const Collapsis = ({ title, children }) => {
+const Collapsis = (props) => {
+  const { title, children } = props;
   const [isVisible, setIsVisible] = useState(false);
   const handleToggle = () => {
     setIsVisible(!isVisible);
@@ -12,6 +13,7 @@ const Collapsis = ({ title, children }) => {
     <div className={`colapsis ${isVisible ? "visible" : ""}`}>
       <div className="headColapsis" onClick={handleToggle}>
         <h3>{title}</h3>
+
         <img
           src={svgFleche}
           alt="flèche"
